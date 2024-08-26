@@ -1,0 +1,49 @@
+<!-- this html tuorial about box shadow and text shadow and css variables and their custom property -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables nd custom property</title>
+    <style>
+        :root{
+            /* variables with global scope ,u can use that varibles in anywhere in the code*/
+            --primary-color: aqua;
+            --danger-color:aliceblue;
+            --shadow-color:green;
+
+        }
+        .box{
+            /* variables with local scope */
+            --box-color:violet;
+            width: 200px;
+            height: 200px;
+            /* background-color:blueviolet; */
+            /* background-color: var(--box-color); */
+            background-color: var(--primary-color);
+            border: 2px solid var(--danger-color);
+            /* box-shadow: offset-x,offset-y,blur-radius,spread-radius; */
+            box-shadow: 5px 5px 0px 20px var(--shadow-color) ;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* p{
+         font-size: 20px;
+         text-shadow:4px 5px red ;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+   <div class="box">
+    
+</div>
+   <div class="box">
+    </div>
+   <div class="box"></div>
+   </div>
+</body>
+</html>

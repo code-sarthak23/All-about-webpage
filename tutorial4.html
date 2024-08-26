@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styling link and button</title>
+    <style>
+
+       p, h2{
+            color: black;
+            font-size: 20px;
+        }
+
+        a:hover,p:hover,h2:hover{
+            color:green;
+        }
+        .container{
+            margin: 40px 40px;
+            border: 5px solid black;
+            padding: 30px;
+        }
+
+
+        a:active{
+            background-color: brown;
+        }
+
+        a:visited{
+            background-color: magenta;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .btn{
+            background-color: aqua;
+            font-size: 16px;
+            border: none;
+            margin: 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+       <h2>THIS IS MY HEADING</h2> 
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eaque minus similique recusandae, fugit dolores in. Voluptatem dolor perferendis quasi. Neque temporibus tempora praesentium quaerat ducimus quibusdam, placeat ipsum, optio sed rem quia incidunt.</p>
+       <a href="https://google.com" class="btn">Read more</a>
+       <a href="https://marvel.com" class="btn">Contact us</a>
+    </div>
+    
+</body>
+</html>

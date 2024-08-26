@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array and Object in Javascript</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <div>
+    <h1>Lorem ipsum dolor sit </h1>
+   </div>
+    <script>
+    //    let va = "my variable";     //string
+    //    let va1 = 74;        //integer
+    //    let va3 = true;      //boolean 
+    //    let va4 = null;      //variable with no value
+    //    let va5 = undefined;  //variable with no value
+    //    console.log(va);
+
+    //    crreating objects in javascript
+
+    let employee = {
+        name: "sarthak",
+        salary: 10,
+        channel:"ssr rajput",
+        channel2:"rajput"
+    }
+    console.log(employee);
+    // now how to access object in javascript
+
+    console.log(employee.name);
+    console.log(employee.salary);
+    console.log(employee.channel);
+    console.log(employee.channel2);
+
+
+    // there is a special kind of object known as arrays.The javascript arrray class is a global object that is used in the construction of array ; which ar high level;list-like object.An array ia a special variable,which can hold more than one value at a time.
+    // we can declare an array as follow
+
+    let names = [3,2,1,"sarthak",undefined];
+    console.log(names);
+    
+    names = names.sort();   //to arrange the array in the ascending order
+   names.push("this is pushed");   //to add a element which would be printed in last of the array
+   console.log(names);
+
+    // an array can contain any type of value in it whether  it is a string,integer,or boolean.
+
+    // some array operation
+
+    console.log(names[1]);   //to print the value present at any index number
+
+    // DOM - document object model
+
+    let name = new Array(23);
+    console.log(name.length);   //to print the length of the array 
+    </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+    "liveServer.settings.fullReload": true,
+    "liveServer.settings.CustomBrowser": "chrome",
+    "workbench.view.alwaysShowHeaderActions": false,
+    "workbench.editor.highlightModifiedTabs": false
+}

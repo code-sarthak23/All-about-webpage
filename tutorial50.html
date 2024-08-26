@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string method in javascript</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lorem, ipsum.</h1>
+        <p>Lorem ipsum dolor sit.</p>
+        <div id="content"></div>
+    </div>
+    <script>
+       document.getElementById('content').innerHTML = '<p>this is sarthak</p>'
+        var str = "this is a string";
+        console.log(str);
+        // first occurence of a substring
+        var position = str.indexOf('is');
+        console.log(position)
+        // last occurence of a substring
+        position = str.lastIndexOf('is')
+        console.log(position)
+        // printing the substring
+        var substr = str.substring(1,7);
+        console.log(substr);
+        // the only difference between substring and slice is that the slice function can take the negative value while substring works for only positive index
+        var substr1 = str.slice(1,7);
+        console.log(substr1);
+        // fuction used to replace the given string with the desired string
+        var replaced = str.replace('string','sarthak')
+        console.log(str);
+        console.log(replaced);
+        // uppercase and lowercase
+        console.log(str.toUpperCase())
+        console.log(str.toLowerCase())
+        // handling the whitespaces
+        var stru = '  this contains    whitespaces'
+        console.log(stru)
+        console.log(stru.trim())
+        // to extract a character from a string
+        var char2 = str.charAt(2)
+        console.log(char2)
+        // to find the char code
+        var char1 = str.charCodeAt(2)
+        console.log(char1)
+        // or simply w can print the character as follow
+        console.log(str[2])
+    </script>
+</body>
+</html>
